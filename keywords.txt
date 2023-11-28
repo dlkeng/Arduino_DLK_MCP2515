@@ -1,0 +1,48 @@
+#######################################
+# Syntax Coloring Map For CommandLine
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+DLK_MCP2515	    KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+MCP2515_CheckRegisterWritable   KEYWORD2
+MCP2515_ExtRtrSend              KEYWORD2
+MCP2515_Init                    KEYWORD2
+MCP2515_ModifyRegister          KEYWORD2
+MCP2515_OnRxInterrupt           KEYWORD2
+MCP2515_ReadRegister            KEYWORD2
+MCP2515_ReadRegisters           KEYWORD2
+MCP2515_ReadRxStatus            KEYWORD2
+MCP2515_ReadStatus              KEYWORD2
+MCP2515_Recv                    KEYWORD2
+MCP2515_Reset                   KEYWORD2
+MCP2515_RtrSend                 KEYWORD2
+MCP2515_Send                    KEYWORD2
+MCP2515_SetBitrate              KEYWORD2
+MCP2515_SetExtFilter            KEYWORD2
+MCP2515_SetExtMask              KEYWORD2
+MCP2515_SetFilter               KEYWORD2
+MCP2515_SetMask                 KEYWORD2
+MCP2515_SetMode                 KEYWORD2
+MCP2515_SetRxMode               KEYWORD2
+MCP2515_WriteRegister           KEYWORD2
+MCP2515_WriteRegisters          KEYWORD2
+MCP2515_Xsend                   KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+MCP2515_OK                      LITERAL1
+SPI0_NUM                        LITERAL1
+SPI1_NUM                        LITERAL1
+SPI_DUMMY_BYTE                  LITERAL1
+FRAME_CNT                       LITERAL1
+MAX_INTS                        LITERAL1
+
