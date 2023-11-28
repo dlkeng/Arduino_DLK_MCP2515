@@ -1,7 +1,7 @@
 # Arduino DLK_MCP2515 Library
 Arduino library for available MCP2515 standalone CAN controller modules.
 
-[image](./docs/mcp2515-2.jpg)
+![MCP2515 Module](./docs/mcp2515-2.jpg)
 
 DLK_MCP2515(spi_speed, cs_pin, hw_cs_pin = false, which_spi = SPI0_NUM);
 
