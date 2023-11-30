@@ -13,7 +13,7 @@
  * MODIFIED:
  *
  */
-/*                Nano
+/*              Nano (Nano Every)
    MCP2515 Pin  Arduino Pin
    ------------------------------
         VCC         5V
@@ -310,7 +310,7 @@
 #include <DLK_MCP2515.h>
 
 // define following to use SPI HW chip-select instead of SW chip-select
-#define USE_HW_SPI_CS
+//#define USE_HW_SPI_CS
 
 // define following to use Rx interrupts instead of polling
 #define USING_RX_INTS
@@ -325,7 +325,7 @@
 #define HEARTBEAT_ON_INTERVAL   50      // mS
 
 // specify CS and interrupt pins to use
-#ifdef __AVR__
+#ifdef __AVR__      // this includes Arduino Nano Every MCU
 #define LED_PIN             8               // the heartbeat LED pin (LED_BUILTIN is used for SPI SCK)
 #define MCP2515_CS_PIN      10
 #define MCP2515_INT_PIN     2               // INT0
@@ -395,7 +395,9 @@
 #define CAN_XMESSAGE_ID     0xabcdef
 #define CAN_SPEED           CAN_250KBPS     // default
 
+#if defined(ARDUINO_ARCH_RP2040) || defined(ESP8266) || defined(ESP32)
 #define EEPROM_SIZE         256         // not needed for AVR
+#endif
 
 // EEPROM addresses
 #define EE_CAN_MSGS_FORMAT  0x08        // 1 byte
