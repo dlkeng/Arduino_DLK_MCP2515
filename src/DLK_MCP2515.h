@@ -35,8 +35,12 @@
 #define SPI_DUMMY_BYTE  0x00
 #define FRAME_CNT       4
 
-#ifdef __AVR__              // Nano
+#ifdef __AVR__              // Nano and Nano Every
+#ifdef ARDUINO_AVR_NANO_EVERY
+    #define MAX_INTS    4
+#else   // Nano (Uno, etc.)
     #define MAX_INTS    2
+#endif
 #endif
 
 #ifdef PHILHOWER_RP2040     // Pi Pico
@@ -56,7 +60,7 @@
 #endif
 
 /**
- * DLK_MCP2515 Arduino MCP2515 CAN library class. Version: "V1.0.3 9/26/2023"
+ * DLK_MCP2515 Arduino MCP2515 CAN library class. Version: "V1.0.5 11/29/2023"
  */
 class DLK_MCP2515
 {
