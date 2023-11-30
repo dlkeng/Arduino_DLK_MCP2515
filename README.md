@@ -19,7 +19,18 @@ AVR Nano
 
 Scenarios:
 ----------
- - up to 4 SPI devices with interrupts (limited by INT pins)
+ - up to 2 SPI devices with interrupts (limited by INT pins)
+ - many SPI devices without interrupts (limited by GPIO pins for SW CS)
+
+
+AVR Nano Every
+--------------
+ - 1 SPI port with SW CS only
+ - many GPIO interrupt pins
+
+Scenarios:
+----------
+ - up to 4 SPI devices with interrupts (total limited by DLK_MCP2515 Library)
  - many SPI devices without interrupts (limited by GPIO pins for SW CS)
 
 
@@ -72,3 +83,4 @@ Scenarios:
 ----------
  - No SPI devices with interrupts
  - many SPI devices without interrupts (limited by GPIO pins for SW CS)
+
